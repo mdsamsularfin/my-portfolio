@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Introduce Myself</title>
+  <style>
+    /* Base */
+    body{
+      font-family: Arial, sans-serif;
+      margin:0; padding:0;
+      background:#000;     /* কালো ব্যাকগ্রাউন্ড */
+      color:#fff;          /* সাদা টেক্সট */
+      text-align:center;
+    }
+
+    /* Card (main section) */
+    .card{
+      background:#111;
+      color:#e5e5e5;
+      width:90%;
+      max-width:550px;
+      margin:40px auto;
+      padding:24px;
+      border-radius:12px;
+      box-shadow:0 4px 20px rgba(0,0,0,.5);
+    }
+
+    /* Name with gradient text */
+    .name{
+      font-size:32px;
+      margin:6px 0 10px;
+      line-height:1.2;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .gradient-text{
+      background: linear-gradient(90deg, #ff4444, #22c55e);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+      color:transparent;
+    }
+
+    /* Small subtitle */
+    .subtitle{ margin:6px 0 16px; font-size:16px; color:#cfcfcf; }
+
+    /* About Me */
+    .about-me{
+      background:#1a1a1a;
+      color:#e5e5e5;
+      border-radius:12px;
+      padding:20px;
+      margin:22px 0;
+      box-shadow:0 0 20px rgba(0,0,0,.5);
+      text-align:left;
+    }
+    .about-me h2{
+      text-align:center;
+      color:#ff4444;
+      margin:0 0 16px;
+      font-size:22px;
+    }
+    .about-flex{
+      display:flex; gap:16px; align-items:center;
+      flex-wrap:wrap; justify-content:center;
+    }
+    .about-flex img{
+      width:120px; height:120px; border-radius:50%;
+      border:3px solid #22c55e; object-fit:cover;
+    }
+    .about-flex p{ margin:6px 0; line-height:1.5; }
+    .about-flex a{ color:#ff4d4d; text-decoration:none; }
+
+    /* Social links (brand colors) */
+    .links{ margin-top:12px; }
+    .btn{
+      display:block;
+      width:80%; max-width:320px;
+      margin:10px auto; padding:12px 14px;
+      border-radius:10px;
+      color:#fff; text-decoration:none; font-weight:700; font-size:16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.25);
+      transition:transform .15s ease, opacity .15s ease, box-shadow .15s ease;
+    }
+    .btn:hover{ transform:scale(1.045); box-shadow:0 6px 16px rgba(0,0,0,.35); opacity:.95; }
+
+    .btn-facebook{ background:#1877F2; }           /* নীল */
+    .btn-whatsapp{
+     background: #25D366;  /* WhatsApp official green */  }
+    .btn-whatsapp:hover{
+     opacity: 0.85;
+     transform: scale(1.05); }
+    .btn-instagram{
+      background: linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4); /* ইনস্টাগ্রাম গ্রেডিয়েন্ট */
+    }
+    .btn-tiktok{ background:#000; border:1px solid #222; } /* কালো */
+    .btn-telegram{ background:#229ED9; }            /* আকাশী নীল */
+    .btn-imo{ background:#1E88E5; }                 /* ইমো নীল */
+    .btn-email{ background:#D44638; }               /* ইমেইল/জিমেইল লাল */
+
+    /* Footer */
+    footer{
+      margin: 30px auto 20px;
+      padding:15px;
+      background:#111;
+      color:#aaa;
+      font-size:14px;
+      border-top:1px solid #333;
+      width:90%; max-width:550px;
+      border-radius:10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Name + subtitle -->
+    <h1 class="name"><span>👋</span><span class="gradient-text">Md Samsul Arfin</span></h1>
+    <p class="subtitle">Assalamu Alaikum</p>
+
+    <!-- About Me -->
+    <div class="about-me">
+      <h2>📝 About Me</h2>
+      <div class="about-flex">
+        <!-- নিজের ছবি ফাইলটি index.html-এর সাথে একই ফোল্ডারে রাখো -->
+        <img src="myphoto.jpg" alt="Md Samsul Arfin">
+        <div>
+          <p><strong>Name:</strong> Muhammad Samsul Arfin</p>
+          <p><strong>Father's Name:</strong> Md Akter Uz Zaman</p>
+          <p><strong>Mother's Name:</strong> Shopna Akter</p>
+          <p><strong>Address:</strong> Village: Khudiar Kanda, Post: Ambaria P.C-2021, P/S: Melandah, District: Jamalpur</p>
+          <p><strong>Phone Number:</strong>
+            <a href="tel:+8801990258158">+8801990258158</a>,
+            <a href="tel:+8801540732317">+8801540732317</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Links with matching emojis + brand colors -->
+    <div class="links">
+      <a class="btn btn-facebook"  href="https://www.facebook.com/share/15HGjxSYvm/" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+      <a class="btn btn-whatsapp"  href="https://wa.me/8801990258158" target="_blank">📱 WhatsApp</a>
+      <a class="btn btn-instagram" href="https://www.instagram.com/mdsamsul1205?igsh=eTM0NWttaG41aGpv" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+      <a class="btn btn-tiktok"    href="https://www.tiktok.com/@mdsamsularfin?_t=ZS-8yvFjvLqAJ0&_r=1" target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+      <a class="btn btn-telegram"  href="http://t.me/mdsamsularfin" target="_blank" rel="noopener noreferrer">✈️ Telegram</a>
+      <a class="btn btn-imo"       href="https://s.imoim.net/M2it9U/" target="_blank" rel="noopener noreferrer">💬 Imo</a>
+      <a class="btn btn-email"     href="mailto:mdsamsul1205@gmail.com">✉️ Email</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Md Samsul Arfin | All Rights Reserved
+  </footer>
+
+</body>
+</html>
